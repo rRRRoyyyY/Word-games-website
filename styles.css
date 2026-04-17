@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Moogalator';
+  src: url('fonts/Moogalator-yYJr3.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helloworld';
+  src: url('fonts/Helloworld-ovvY0.ttf') format('truetype'); 
+}
+
+body {
+    background-color:#FFD230;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 130px;
+    background-color: #0092D1;
+}
+
+h1 {
+    font-family: 'Moogalator', serif;
+    color: white;
+    font-size: 60px;
+}
+
+#websiteExtra {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#websiteTitle {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#websiteNav {
+    grid-column: 5/6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#websiteNavExtra {
+    grid-column: 1/2;
+}
+
+.menuWrapper {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+#threeBars {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Bars {
+    height: 10px;
+    width: 60px;
+    background-color: white;
+    margin: 7px;
+}
+
+.menuContent {
+  display: none;
+  position: absolute;
+  top: 100%; /* Places menu below the bars */
+  background-color: #ffffff;
+  min-width: 150px;
+  right: 0px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+}
+
+/* Show the menu on hover */
+.menuWrapper:hover .menuContent {
+  display: block;
+}
+
+/* Styling for links inside the menu */
+.menuContent a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuContent a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+.separator {
+    height: 10px;
+    background-color: white;
+}
+
+
+
+
+
+/* For the HOME webpage */
+#homeMain {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#mainExtra1 {
+    grid-column: 1/2;
+}
+
+#mainExtra2 {
+    grid-column: 5/6;
+}
+
+#games {
+    grid-column: 2/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 30px; */
+}
+
+.gameName {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    display: inline;
+    height: 200px;
+    width: 350px;
+    background: #0092D1;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: white 10px solid;
+}
+
+.gameName > h2 {
+    font-family: 'Helloworld', san-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+}
+
+
+
+
+
+/* For the RIDDLES(other games too) webpage */
+.gamesMain {
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#gamesExtra1 {
+    grid-column: 1/2;
+}
+
+#gamesExtra2 {
+    grid-column: 5/6;
+}
+
+.options {
+    grid-column: 2/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Start {
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    display: inline;
+    height: 200px;
+    width: 350px;
+    background: #75CC33;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: white 10px solid;
+    font-family: 'Helloworld', san-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+}
+
+.Library {
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    display: inline;
+    height: 200px;
+    width: 350px;
+    background: #C06911;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: white 10px solid;
+    font-family: 'Helloworld', san-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+}
+.plainLinks {
+    text-decoration: none; 
+    color: inherit;        
+    cursor: pointer; 
+}
+
+.mainBackBtn {
+    width: 100px;
+    height: 80px;
+    border-radius: 20px;
+    color: white;
+    border: solid white 5px;
+    background-color: #FFD230;
+    font-size: 40px;
+    font-weight:700;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.gameArea {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gameWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: white solid 5px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#0092D1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.questionContainer {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.questionDisplayStyle {
+    font-size: 30px;
+    color: white;
+}
+
+.questionDisplayStyleImg {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.ownerDisplayStyle {
+    font-size: 15px;
+    color: white;
+}
+
+.replyStyle {
+    font-size: 20px;
+    color: white;
+}
+
+.userGuessStyle {
+    height: 30px;
+    border: white solid 2px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.submitGuessBtnStyle {
+    height: 30px;
+    border: white solid 2px;
+    border-radius: 5px;
+    background: #75CC33;
+    font-size: 15px;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.showAnswerBtnStyle {
+    height: 30px;
+    border: rgba(255, 255, 255, 0.459) solid 2px;
+    border-radius: 5px;
+    background: #ffffff33;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.534);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.nextQuestionBtnStyle {
+    height: 30px;
+    border: rgba(255, 255, 255, 0.459) solid 2px;
+    border-radius: 5px;
+    background: #ffffff33;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.534);
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: auto;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 87%;
+}
+
+.triesDisplayStyle {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+
+
+.gameCard {
+    
+    display:flex;
+    flex-direction: column;
+    display: block;
+    border: 2px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background-color:#0092D1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* .cardAction.Locked {
+    color: red;
+    font-weight: bold;
+} */
+
+.cardQuestion {
+    font-size: 30px;
+}
+
+.cardQuestionImg {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    display: block;
+}
+
+
+
+.cardAction.is-locked {
+    color: rgba(255, 255, 255, 0.6); /* Faded white */
+    font-weight: bold;
+    font-style: italic; /* Makes it feel different from "Solve Now" */
+}
