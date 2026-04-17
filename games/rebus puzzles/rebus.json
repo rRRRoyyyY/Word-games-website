@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "question": "./images/rebus1.PNG",
+        "answer": "A big fish in a small pond",
+        "difficulty": "easy",
+        "owner": "public domain" 
+    },
+     
+    {
+        "id": 2,
+        "question": "./images/rebus2.PNG",
+        "answer": "back on one's feet",
+        "difficulty": "easy",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": 3,
+        "question": "./images/rebus3.PNG",
+        "answer": "too funny for words",
+        "difficulty": "easy",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": 4,
+        "question": "./images/rebus4.PNG",
+        "answer": "love at first sight",
+        "difficulty": "easy",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": 5,
+        "question": "./images/rebus5.PNG",
+        "answer": "coffee break",
+        "difficulty": "easy",
+        "owner": "public domain" 
+    }
+]
