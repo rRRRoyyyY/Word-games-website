@@ -1,0 +1,37 @@
+[
+    {
+    "id": 1,
+    "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+    "answer": "A map",
+    "owner": "Public Domain"
+    },
+
+    {
+    "id": 2,
+    "question": "The more of this there is, the less you see. What is it?",
+    "answer": "Darkness",
+    "owner": "Public Domain"
+    },
+
+    {
+    "id": 3,
+    "question": "I follow you all day long, but when the night comes, I am gone. What am I?",
+    "answer": "Your shadow",
+    "owner": "Public Domain"
+    },
+
+    {
+    "id": 4,
+    "question": "I am tall when I am young, and I am short when I am old. What am I?",
+    "answer": "A candle",
+    "owner": "Public Domain"
+    },
+
+    {
+    "id": 5,
+    "question": "What has to be broken before you can use it?",
+    "answer": "An egg",
+    "owner": "Public Domain"
+    }
+]
+

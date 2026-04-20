@@ -3,7 +3,6 @@
         "id": 1,
         "question": "What has a neck but not a head?",
         "answer": "A bottle",
-        "difficulty": "easy",
         "owner": "public domain" 
     },
      
@@ -11,7 +10,6 @@
         "id": 2,
         "question": "I am an odd number. Take away a letter and I become even. What number am I?",
         "answer": "Seven",
-        "difficulty": "easy",
         "owner": "public domain" 
     },
 
@@ -19,7 +17,6 @@
         "id": 3,
         "question": "What has hands but cannot clap?",
         "answer": "A clock",
-        "difficulty": "easy",
         "owner": "public domain" 
     },
 
@@ -27,7 +24,6 @@
         "id": 4,
         "question": "What gets smaller every time it takes a bath?",
         "answer": "A bar of soap",
-        "difficulty": "easy",
         "owner": "public domain" 
     },
 
@@ -35,7 +31,6 @@
         "id": 5,
         "question": "I'm not a blanket, yet I cover the ground; a crystal from heaven that doesn't make a sound. What am I?",
         "answer": "A snowflake",
-        "difficulty": "easy",
         "owner": "public domain" 
     }
 ]
