@@ -22,7 +22,6 @@ function getSavedTries(gameType, id) {
 function isItemLocked(gameType, id) {
     if (!id || !gameType) return false;
     const lockTime = localStorage.getItem(`lockout_${gameType}_${id}`);
-    
     return !!(lockTime && Date.now() < Number(lockTime));
 }
 
@@ -30,9 +29,7 @@ function formatHearts(count) {
     if (count <= 0) {
         return "💔💔💔 🔒"; 
     }
-    
     const fullHearts = "❤️".repeat(count);
     const brokenHearts = "💔".repeat(3 - count);
-    
     return fullHearts + brokenHearts;
 }
