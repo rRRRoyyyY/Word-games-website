@@ -1,4 +1,4 @@
-let gameData = [];
+// let dataFile = [];
 
 function loadGameData(path) {
     return fetch(path)
@@ -7,8 +7,8 @@ function loadGameData(path) {
             return response.json();
         })
         .then(data => {
-            gameData = data; 
-            return gameData; 
+            dataFile = data; 
+            return dataFile; 
         })
         .catch(error => console.error("Failed to load game data:", error));
 }

@@ -1,26 +1,39 @@
-const gamePage = "rebusStart.html"; // For Hink Pink, change this to "hinkPinkStart.html"
+const urlParams = new URLSearchParams(window.location.search);
+const difficulty = urlParams.get('difficulty') || 'normal';
 
-loadGameData('./rebus.json').then(() => {
+const gamePage = `rebusStart.html?difficulty=${difficulty}`;
+
+let dataFile = {
+    easy: './JSONs/rebus_easy.json',
+    normal: './JSONs/rebus_normal.json',
+    hard: './JSONs/rebus_hard.json',
+    lunatic: './JSONs/rebus_lunatic.json',
+}[difficulty] || './JSONs/rebus_normal.json';
+
+loadGameData(dataFile).then(() => {
     const container = document.getElementById('libraryContainer');
-    container.innerHTML = ""; // Clear the 'Loading' text
+    container.innerHTML = "";
 
-    gameData.forEach(item => {
-        const lives = getSavedTries('rebus',item.id);
-        const locked = isItemLocked('rebus',item.id);
+    dataFile.forEach(item => {
+        const lives = getSavedTries('rebus', item.id);
+        const locked = isItemLocked('rebus', item.id);
 
         const card = document.createElement('a');
         card.className = "gameCard";
-        card.href = `${gamePage}?id=${item.id}`;
+        card.href = `${gamePage}&id=${item.id}`;
 
         card.innerHTML = `
             <div class="cardHeader">
                 <span>By: ${item.owner}</span>
                 <span>${formatHearts(lives)}</span>
             </div>
-            <img class="cardQuestionImg" src="${item.question}" alt="Question Image">
-            <span class="cardAction ${locked ? 'is-locked' : ''}">${locked ? "Locked" : "Solve Now →"}</span>
+            <div class="cardImageContainer">
+                <img src="${item.question}" alt="Rebus Puzzle" class="cardImage">
+            </div>
+            <span class="cardAction">${locked ? "Locked" : "Solve Now →"}</span>
         `;
 
         container.appendChild(card);
     });
+
 });

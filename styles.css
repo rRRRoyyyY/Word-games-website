@@ -32,7 +32,7 @@ header {
 h1 {
     font-family: 'Moogalator', serif;
     color: white;
-    font-size: 60px;
+    font-size: clamp(2rem, 4vw, 4rem);
 }
 
 #websiteExtra {

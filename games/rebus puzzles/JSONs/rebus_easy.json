@@ -1,0 +1,36 @@
+[
+    {
+        "id": "RPE1",
+        "question": "../images/rebus1.jpg",
+        "answer": "A fishing hook",
+        "owner": "public domain" 
+    },
+     
+    {
+        "id": "RPE2",
+        "question": "../images/rebus2.jpg",
+        "answer": "A small secret",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": "RPE3",
+        "question": "../images/rebus3.jpg",
+        "answer": "crossroads",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": "RPE4",
+        "question": "../images/rebus4.jpg",
+        "answer": "once upon a time",
+        "owner": "public domain" 
+    },
+
+    {
+        "id": "RPE5",
+        "question": "../images/rebus5.jpg",
+        "answer": "middle aged",
+        "owner": "public domain" 
+    }
+]

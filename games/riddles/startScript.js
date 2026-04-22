@@ -2,17 +2,15 @@ let currentItem = null;
 let triesLeft = 3;
 let countdownInterval;
 
-// --- Unified Data Load ---
 const urlParams = new URLSearchParams(window.location.search);
 const difficulty = urlParams.get('difficulty') || 'normal';
-const dataFile = {
-    easy: './riddles_easy.json',
-    normal: './riddles_normal.json',
-    hard: './riddles_hard.json',
-    lunatic: './riddles_lunatic.json',
-}[difficulty] || './riddles_normal.json';
+let dataFile = {
+    easy: './JSONs/riddles_easy.json',
+    normal: './JSONs/riddles_normal.json',
+    hard: './JSONs/riddles_hard.json',
+    lunatic: './JSONs/riddles_lunatic.json',
+}[difficulty] || './JSONs/riddles_normal.json';
 
-// Ensure passing difficulty param when going back to Library
 function updateBackLink(specificId) {
     const backBtn = document.getElementById('backBtnLink');
     if (backBtn) {
@@ -33,10 +31,10 @@ function renderItem() {
     updateBackLink(specificId);
 
     if (specificId) {
-        currentItem = gameData.find(riddle => String(riddle.id) === String(specificId));
+        currentItem = dataFile.find(riddle => String(riddle.id) === String(specificId));
     } else {
-        const randomIndex = Math.floor(Math.random() * gameData.length);
-        currentItem = gameData[randomIndex];
+        const randomIndex = Math.floor(Math.random() * dataFile.length);
+        currentItem = dataFile[randomIndex];
     }
 
     triesLeft = getSavedTries('riddle', currentItem.id); 
@@ -162,13 +160,13 @@ function unlockRiddle() {
 function handleNextClick() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('id')) {
-        const currentIndex = gameData.findIndex(item => String(item.id) === String(currentItem.id));
+        const currentIndex = dataFile.findIndex(item => String(item.id) === String(currentItem.id));
         const nextIndex = currentIndex + 1;
-        if (nextIndex < gameData.length) {
-            const nextItem = gameData[nextIndex];
+        if (nextIndex < dataFile.length) {
+            const nextItem = dataFile[nextIndex];
             window.location.href = `${window.location.pathname}?difficulty=${difficulty}&id=${nextItem.id}`;
         } else {
-            window.location.href = `${window.location.pathname}?difficulty=${difficulty}&id=${gameData[0].id}`;
+            window.location.href = `${window.location.pathname}?difficulty=${difficulty}&id=${dataFile[0].id}`;
         }
     } else {
         renderItem();
