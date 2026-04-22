@@ -31,7 +31,7 @@ function renderItem() {
     updateBackLink(specificId);
 
     if (specificId) {
-        currentItem = dataFile.find(riddle => String(rebus.id) === String(specificId));
+        currentItem = dataFile.find(rebus => String(rebus.id) === String(specificId));
     } else {
         const randomIndex = Math.floor(Math.random() * dataFile.length);
         currentItem = dataFile[randomIndex];
@@ -39,7 +39,7 @@ function renderItem() {
 
     triesLeft = getSavedTries('rebus', currentItem.id); 
 
-    document.getElementById('questionDisplay').innerHTML = `<img src="${currentItem.question}" alt="Rebus Puzzle">`;
+    document.getElementById('questionDisplay').innerHTML = `<img class="questionDisplayStyleImg" src="./${currentItem.question}" alt="Rebus Puzzle">`;
     document.getElementById('itemCredit').innerText = currentItem.owner;
     document.getElementById('userGuess').value = "";
     

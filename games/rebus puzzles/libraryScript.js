@@ -13,6 +13,7 @@ let dataFile = {
 loadGameData(dataFile).then(() => {
     const container = document.getElementById('libraryContainer');
     container.innerHTML = "";
+    container.innerHTML = `<span class="difficultyDisplayStyle">---${difficulty}---</span>`;
 
     dataFile.forEach(item => {
         const lives = getSavedTries('rebus', item.id);
@@ -28,7 +29,7 @@ loadGameData(dataFile).then(() => {
                 <span>${formatHearts(lives)}</span>
             </div>
             <div class="cardImageContainer">
-                <img src="${item.question}" alt="Rebus Puzzle" class="cardImage">
+                <img class="questionDisplayStyleImg" src="${item.question}" alt="Rebus Puzzle">
             </div>
             <span class="cardAction">${locked ? "Locked" : "Solve Now →"}</span>
         `;

@@ -1,35 +1,35 @@
 [
     {
         "id": "RPH1",
-        "question": "../images/rebus9.jpg",
+        "question": "images/rebus9.jpg",
         "answer": "overseas travel",
         "owner": "public domain" 
     },
      
     {
         "id": "RPH2",
-        "question": "../images/rebus10.jpg",
+        "question": "images/rebus10.jpg",
         "answer": "misunderstood",
         "owner": "public domain" 
     },
 
     {
         "id": "RPH3",
-        "question": "../images/rebus21.jpg",
+        "question": "images/rebus21.jpg",
         "answer": "pirate ship",
         "owner": "public domain" 
     },
 
     {
         "id": "RPH4",
-        "question": "../images/rebus11.jpg",
+        "question": "images/rebus11.jpg",
         "answer": "back on one's feet",
         "owner": "public domain" 
     },
 
     {
         "id": "RPH5",
-        "question": "../images/rebus22.jpg",
+        "question": "images/rebus22.jpg",
         "answer": "no biggie",
         "owner": "public domain" 
     }

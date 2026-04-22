@@ -1,42 +1,42 @@
 [
     {
     "id": "RPL1",
-    "question": "../images/rebus23.jpg",
+    "question": "images/rebus23.jpg",
     "answer": "hot under the collar",
     "owner": "public domain"
     },
 
     {
     "id": "RPL2",
-    "question": "../images/rebus15.jpg",
+    "question": "images/rebus15.jpg",
     "answer": "thunder storm",
     "owner": "public domain"
     },
 
     {
     "id": "RPL3",
-    "question": "../images/rebus16.jpg",
+    "question": "images/rebus16.jpg",
     "answer": "Eiffel tower",
     "owner": "public domain"
     },
 
     {
     "id": "RPL4",
-    "question": "../images/rebus14.jpg",
+    "question": "images/rebus14.jpg",
     "answer": "wise lady",
     "owner": "public domain"
     },
 
     {
     "id": "RPL5",
-    "question": "../images/rebus17.jpg",
+    "question": "images/rebus17.jpg",
     "answer": "out on a limb",
     "owner": "public domain"
     },
 
     {
     "id": "RPL6",
-    "question": "../images/rebus18.jpg",
+    "question": "images/rebus18.jpg",
     "answer": "Archnemesis",
     "owner": "public domain"
     }

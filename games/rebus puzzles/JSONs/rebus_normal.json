@@ -1,42 +1,42 @@
 [
     {
     "id": "RPN1",
-    "question": "../images/rebus20.jpg",
+    "question": "images/rebus20.jpg",
     "answer": "A big fish in a small pond",
     "owner": "public domain"
     },
 
     {
     "id": "RPN2",
-    "question": "../images/rebus6.jpg",
+    "question": "images/rebus6.jpg",
     "answer": "Scrambled eggs",
     "owner": "public domain"
     },
 
     {
     "id": "RPN3",
-    "question": "../images/rebus7.jpg",
+    "question": "images/rebus7.jpg",
     "answer": "Coffee break",
     "owner": "public domain"
     },
 
     {
     "id": "RPN4",
-    "question": "../images/rebus19.jpg",
+    "question": "images/rebus19.jpg",
     "answer": "love at first sight",
     "owner": "public domain"
     },
 
     {
     "id": "RPN5",
-    "question": "../images/rebus12.jpg",
+    "question": "images/rebus12.jpg",
     "answer": "noone understands",
     "owner": "public domain"
     },
 
     {
     "id": "RPN6",
-    "question": "../images/rebus8.jpg",
+    "question": "images/rebus8.jpg",
     "answer": "history repeats itself",
     "owner": "public domain"
     }
