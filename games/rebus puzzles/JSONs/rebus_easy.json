@@ -3,34 +3,35 @@
         "id": "RPE1",
         "question": "images/rebus1.jpg",
         "answer": "A fishing hook",
-        "owner": "public domain" 
+        "owner": "public domain",
+        "hint": "I couldn't think of any"
     },
-     
     {
         "id": "RPE2",
         "question": "images/rebus2.jpg",
         "answer": "A small secret",
-        "owner": "public domain" 
+        "owner": "public domain",
+        "hint": "How big is it?"
     },
-
     {
         "id": "RPE3",
         "question": "images/rebus3.jpg",
         "answer": "crossroads",
-        "owner": "public domain" 
+        "owner": "public domain",
+        "hint": "People go here to sell their souls to the devil"
     },
-
     {
         "id": "RPE4",
         "question": "images/rebus4.jpg",
         "answer": "once upon a time",
-        "owner": "public domain" 
+        "owner": "public domain",
+        "hint": "What does a clock tell you?"
     },
-
     {
         "id": "RPE5",
         "question": "images/rebus5.jpg",
         "answer": "middle aged",
-        "owner": "public domain" 
+        "owner": "public domain",
+        "hint": "Your mom. (probably, if you're a teen)"
     }
 ]

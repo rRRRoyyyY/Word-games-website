@@ -1,44 +1,44 @@
 [
     {
-    "id": "RPL1",
-    "question": "images/rebus23.jpg",
-    "answer": "hot under the collar",
-    "owner": "public domain"
+        "id": "RPL1",
+        "question": "images/rebus23.jpg",
+        "answer": "hot under the collar",
+        "owner": "public domain",
+        "hint": "I don't experience this because I'm just a chill guy"
     },
-
     {
-    "id": "RPL2",
-    "question": "images/rebus15.jpg",
-    "answer": "thunder storm",
-    "owner": "public domain"
+        "id": "RPL2",
+        "question": "images/rebus15.jpg",
+        "answer": "thunderstorm",
+        "owner": "public domain",
+        "hint": "Kids are usually scared of this but I find love it because I'm super edgy"
     },
-
     {
-    "id": "RPL3",
-    "question": "images/rebus16.jpg",
-    "answer": "Eiffel tower",
-    "owner": "public domain"
+        "id": "RPL3",
+        "question": "images/rebus16.jpg",
+        "answer": "Eiffel tower",
+        "owner": "public domain",
+        "hint": "I wonder why they made it so pointy. Oh wait I guess most of these kinda things are pointy. But still, this one is extra pointy."
     },
-
     {
-    "id": "RPL4",
-    "question": "images/rebus14.jpg",
-    "answer": "wise lady",
-    "owner": "public domain"
+        "id": "RPL4",
+        "question": "images/rebus14.jpg",
+        "answer": "wise lady",
+        "owner": "public domain",
+        "hint": "Most would assume she's a grandma"
     },
-
     {
-    "id": "RPL5",
-    "question": "images/rebus17.jpg",
-    "answer": "out on a limb",
-    "owner": "public domain"
+        "id": "RPL5",
+        "question": "images/rebus17.jpg",
+        "answer": "out on a limb",
+        "owner": "public domain",
+        "hint": "You when confessing to your crush XD"
     },
-
     {
-    "id": "RPL6",
-    "question": "images/rebus18.jpg",
-    "answer": "Archnemesis",
-    "owner": "public domain"
+        "id": "RPL6",
+        "question": "images/rebus18.jpg",
+        "answer": "Archnemesis",
+        "owner": "public domain",
+        "hint": "I don't have any because I'm forgiving, kindhearted, peaceful, holistic, loving, and a total chad."
     }
 ]
-

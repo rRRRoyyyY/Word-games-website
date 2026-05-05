@@ -10,29 +10,73 @@ let dataFile = {
     lunatic: './JSONs/rebus_lunatic.json',
 }[difficulty] || './JSONs/rebus_normal.json';
 
-loadGameData(dataFile).then(() => {
+loadGameData(dataFile).then((gameData) => {
     const container = document.getElementById('libraryContainer');
-    container.innerHTML = "";
-    container.innerHTML = `<span class="difficultyDisplayStyle">---${difficulty}---</span>`;
+    const solvedDisplay = document.getElementById('solvedDisplay'); // Target hard-coded ID
+    const container2 = document.getElementById('difficultyContainer');
+    const giveupCount = localStorage.getItem(`rebus_giveups_${difficulty}`) || 0;
+    const hintCount = localStorage.getItem(`rebus_hints_${difficulty}`) || 0;
+    document.getElementById('giveupRecord').innerText = `Give Up's Used: ${giveupCount}`;
+    document.getElementById('hintRecord').innerText = `Hints Used: ${hintCount}`;
 
-    dataFile.forEach(item => {
+    if (!container) return;
+
+    // 1. Get the data counts
+    const questionCount = gameData.length;
+    const solvedCount = getSolvedCount('rebus', difficulty);
+
+    if (solvedCount >= questionCount) {
+             document.getElementById('completionBadge').classList.remove('hidden');
+             // Optional: Trigger a special alert or sound
+             console.log("Difficulty Mastered!");}
+
+    if (solvedDisplay) {
+        solvedDisplay.innerHTML = formatSolved(solvedCount, questionCount);
+    }
+
+    container2.innerHTML = `<span class="difficultyDisplayStyle">---${difficulty}---</span>`;
+    container.innerHTML = "";
+
+    gameData.forEach(item => {
         const lives = getSavedTries('rebus', item.id);
         const locked = isItemLocked('rebus', item.id);
+        const isSolved = localStorage.getItem(`status_rebus_${item.id}`) === "true";
 
         const card = document.createElement('a');
         card.className = "gameCard";
         card.href = `${gamePage}&id=${item.id}`;
 
-        card.innerHTML = `
-            <div class="cardHeader">
-                <span>By: ${item.owner}</span>
-                <span>${formatHearts(lives)}</span>
-            </div>
-            <div class="cardImageContainer">
-                <img class="questionDisplayStyleImg" src="${item.question}" alt="Rebus Puzzle">
-            </div>
-            <span class="cardAction">${locked ? "Locked" : "Solve Now →"}</span>
-        `;
+        if (locked) card.classList.add('cardLocked');
+        // Optional: Add a 'solved' class for styling if you want
+        if (isSolved) card.classList.add('cardSolved');
+
+        let actionText = "Solve Now →";
+        if (isSolved) {
+            actionText = "Already Solved ✅";
+        } else if (locked) {
+            actionText = "Locked 🔒";
+        }
+
+        if (item.owner == "public domain") {
+            card.innerHTML = `
+                <div class="cardHeader">
+                    <span></span>
+                    <span>${formatHearts(lives)}</span>
+                </div>
+                <img src="${item.question}" class="cardQuestionImg">
+                <span class="cardAction">${actionText}</span>
+            `;
+        }
+        else {
+            card.innerHTML = `
+                <div class="cardHeader">
+                    <div>By: ${item.owner}</div>
+                    <span>${formatHearts(lives)}</span>
+                </div>
+                <p class="cardQuestion">${item.question}</p>
+                <span class="cardAction">${locked ? "Locked 🔒" : "Solve Now →"}</span>
+            `;
+        }
 
         container.appendChild(card);
     });

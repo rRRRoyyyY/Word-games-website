@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebus-Start</title>
+    <title>Rebus-Random</title>
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -22,16 +22,21 @@
                 </div>
                 <div class="menuContent">
                     <a href="../../home.html">Home</a>
-                    <a href="../../about.html">About</a>
+                    <a href="../../contactAbout.html">About/Contact</a>
+                    <a href="../../guide.html">How to Play</a>
                 </div>
             </div>
         </nav>
     </header>
     <section class="separator"></section>
-    <main class="gamesMain">
-        <section id="gamesExtra1"></section>
+    <div id="difficultyContainer"></div>
+    <div id="randomOrLibrary"></div>
+    <main class="gamesMainStart">
         <section class="gameArea">
+            <div id="difficultyContainer"></div>
+            <div id="randomOrLibrary"></div>
             <div class="gameWrapper">
+                <p id="informStatus" class="hidden">Already Solved</p>
                 <div class="ownerDisplayStyle" id="itemCredit"></div>
                 <span class="triesDisplayStyle" id="triesDisplay" ></span>
                 <div class="questionContainer">
@@ -41,20 +46,44 @@
                         <button class="submitGuessBtnStyle" id="submitGuessBtn">Submit</button>
                     </div>
                     <div id="lockoutArea" class="hidden">
-                        <p class="replyStyle">Out of tries! Try again in: <span id="rebusTimer">23:59:59</span></p>
+                        <p class="replyStyle">Try again in: <span id="rebusTimer">23:59:59</span></p>
                     </div>
                     <p class="replyStyle" id="feedbackDisplay"></p>
                     <p class="replyStyle" id="answerDisplay" class="hidden"></p>
                 </div>
-                <div class="buttonGroup">
-                    <button class="showAnswerBtnStyle" id="showAnswerBtn">Give Up?</button>
-                    <button class="nextQuestionBtnStyle" id="nextQuestionBtn">Next Rebus&gt;&gt;</button>
+                <div class="ingameChoices">
+                    <div class="buttonGroup">
+                        <button class="showAnswerBtnStyle" id="showAnswerBtn">Give Up?</button>
+                        <button class="showAnswerBtnStyle" id="hintBtn">See hint?</button>
+                        <button class="nextQuestionBtnStyle" id="nextQuestionBtn">Next Rebus&gt;&gt;</button>
+                    </div>
+                    <p class="hidden" id="hintBox"></p>
                 </div>
+            </div>
+        </section>
+        <section id="gamesExtra1">
+            <div id="gameStats">
+                <img src="../../images/All solved!.png" id="completionBadge" class="hidden">
+                <div id="solvedDisplayLabel">
+                    <div id="statsLabels">Solved: </div>
+                    <img src="../../images/solved.png" class="statusIcon glow">
+                </div>
+                <div id="solvedDisplay"></div>
+                <div id="giveupRecord"></div>
+                <div id="hintRecord"></div>
             </div>
         </section>
         <section id="gamesExtra2"></section>
     </main>
+    <dialog id="confirmDialog">
+        <p id="dialogMessage">Are you sure?</p> 
+        <div class="dialog-buttons">
+            <button id="cancelBtn">Nah</button>
+            <button id="confirmBtn">Yup</button>
+        </div>
+    </dialog>
     <script src="../SHARED FILES/common.js" defer></script>
     <script src="startScript.js" defer></script>
+    <script src="../../menu.js"></script>
 </body>
 </html>

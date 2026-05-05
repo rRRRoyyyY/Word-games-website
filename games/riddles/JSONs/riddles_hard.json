@@ -1,37 +1,37 @@
 [
     {
-    "id": 11,
-    "question": "What is so fragile that saying its name breaks it?",
-    "answer": "Silence",
-    "owner": "Public Domain"
+        "id": 11,
+        "question": "What is so fragile that saying its name breaks it?",
+        "answer": "Silence",
+        "owner": "public domain",
+        "hint": "It's usually yelled by middle aged women"
     },
-    
     {
-    "id": 12,
-    "question": "I have keys, but no locks and a space, but no room. You can enter, but never leave. What am I?",
-    "answer": "A keyboard",
-    "owner": "Public Domain"
+        "id": 12,
+        "question": "I have keys, but no locks and a space, but no room. You can enter, but never leave. What am I?",
+        "answer": "A keyboard",
+        "owner": "public domain",
+        "hint": "clickety clack"
     },
-
     {
-    "id": 13,
-    "question": "The person who builds it sells it. The person who buys it never uses it. The person who uses it never knows it. What is it?",
-    "answer": "A coffin",
-    "owner": "Public Domain"
+        "id": 13,
+        "question": "The person who builds it sells it. The person who buys it never uses it. The person who uses it never knows it. What is it?",
+        "answer": "A coffin",
+        "owner": "public domain",
+        "hint": "Do you believe in the afterlife?"
     },
-
     {
-    "id": 14,
-    "question": "I am seen in the water, but I never get wet. What am I?",
-    "answer": "A reflection",
-    "owner": "Public Domain"
+        "id": 14,
+        "question": "I am seen in the water, but I never get wet. What am I?",
+        "answer": "A reflection",
+        "owner": "public domain",
+        "hint": "People are scared of yours😂"
     },
-
     {
-    "id": 15,
-    "question": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
-    "answer": "A river",
-    "owner": "Public Domain"
+        "id": 15,
+        "question": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
+        "answer": "A river",
+        "owner": "public domain",
+        "hint": "I didn't know it had a mouth and a head"
     }
 ]
-

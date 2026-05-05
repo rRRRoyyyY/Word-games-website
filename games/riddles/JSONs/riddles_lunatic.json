@@ -1,37 +1,37 @@
 [
     {
-    "id": 16,
-    "question": "I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every place. What am I?",
-    "answer": "The letter E",
-    "owner": "Public Domain"
+        "id": 16,
+        "question": "I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every place. What am I?",
+        "answer": "The letter E",
+        "owner": "public domain",
+        "hint": "Literal in the most literal sense of the word literal."
     },
-
     {
-    "id": 16,
-    "question": "A girl has as many brothers as sisters, but each boy has only half as many brothers as sisters. How many brothers and sisters are there?",
-    "answer": "Four sisters and three brothers",
-    "owner": "Public Domain"
+        "id": 17,
+        "question": "Which month of the year has 28 days?",
+        "answer": "All of them",
+        "owner": "public domain",
+        "hint": "Was it more than one?"
     },
-
     {
-    "id": 18,
-    "question": "What is it that given one, you'll have either two or none?",
-    "answer": "A choice",
-    "owner": "Public Domain"
+        "id": 18,
+        "question": "What is it that given one, you'll have either two or none?",
+        "answer": "A choice",
+        "owner": "public domain",
+        "hint": "Students love questions that have multiple of these"
     },
-
     {
-    "id": 19,
-    "question": "I turn polar bears white and I will make you cry. I make guys have to pee and girls comb their hair. I make celebrities look stupid and normal people look like celebrities. I turn pancakes brown and make your champagne bubble. If you squeeze me, I'll pop. If you look at me, you'll pop. Can you guess the riddle?",
-    "answer": "No",
-    "owner": "Public Domain"
+        "id": 19,
+        "question": "I turn polar bears white and I will make you cry. I make guys have to pee and girls comb their hair. I make celebrities look stupid and normal people look like celebrities. I turn pancakes brown and make your champagne bubble. If you squeeze me, I'll pop. If you look at me, you'll pop. Can you guess the riddle?",
+        "answer": "No",
+        "owner": "public domain",
+        "hint": "No hint available yet."
     },
-
     {
-    "id": 20,
-    "question": "Forward I am heavy, but backward I am not. What am I?",
-    "answer": "The word ton",
-    "owner": "Public Domain"
+        "id": 20,
+        "question": "Forward I am heavy, but backward I am not. What am I?",
+        "answer": "The word ton",
+        "owner": "public domain",
+        "hint": "The answer sounds like a certain measurement unit."
     }
 ]
-

@@ -22,20 +22,35 @@
                 </div>
                 <div class="menuContent">
                     <a href="../../home.html">Home</a>
-                    <a href="../../about.html">About</a>
+                    <a href="../../contactAbout.html">About/Contact</a>
+                    <a href="../../guide.html">How to Play</a>
                 </div>
             </div>
         </nav>
     </header>
     <section class="separator"></section>
-    <main class="gamesMain">
-        <section id="gamesExtra1"></section>
+    <div id="difficultyContainer"></div>
+    <div id="randomOrLibrary"></div>
+    <main class="gamesMainStart">
         <section class="gameArea">
             <div id="libraryContainer"><p class="loadingLibrary">Loading library...</p></div>
+        </section>
+        <section id="gamesExtra1">
+            <div id="gameStats">
+                <img src="../../images/All solved!.png" id="completionBadge" class="hidden">
+                <div id="solvedDisplayLabel">
+                    <div id="statsLabels">Solved: </div>
+                    <img src="../../images/solved.png" class="statusIcon glow">
+                </div>
+                <div id="solvedDisplay"></div>
+                <div id="giveupRecord"></div>
+                <div id="hintRecord"></div>
+            </div>
         </section>
         <section id="gamesExtra2"></section>
     </main>
     <script src="../SHARED FILES/common.js" defer></script>
     <script src="libraryScript.js" defer></script>
+    <script src="../../menu.js"></script>
 </body>
 </html>
